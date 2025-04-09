@@ -1,0 +1,49 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# Node / frontend
+node_modules/
+dist/
+.pnpm-store/
+
+# Go / C++ build artifacts
+*.exe
+*.obj
+*.o
+*.a
+*.dll
+*.so
+*.dylib
+build/
+cmake-build-*/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+*.pem
+credentials.json
+
+# Large generated docs (regenerate with generate_report.py)
+Cybersecurity_Projects_Documentation.docx
+Cybersecurity_Projects_Technical_Report.docx
+~$*.docx
+
+# Temp
+_repo/
+*.log
