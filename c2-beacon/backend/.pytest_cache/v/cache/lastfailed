@@ -1,0 +1,4 @@
+{
+  "tests/test_app.py::TestBeaconEndpoints::test_list_beacons_empty": true,
+  "tests/test_app.py::TestBeaconEndpoints::test_get_beacon_not_found": true
+}
