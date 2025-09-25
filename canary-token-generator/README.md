@@ -1,3 +1,36 @@
+<!--
+  Module 04 — canary-token-generator
+  Part of cybersecurity-projects laboratory corpus
+-->
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/WinstonMascarenhas1006/cybersecurity-projects/main/assets/modules/04-canary-token-generator.png" alt="canary-token-generator laboratory module" width="100%" />
+</div>
+
+<p align="center">
+  <a href="https://github.com/WinstonMascarenhas1006"><img src="https://img.shields.io/badge/Author-Winston_Mascarenhas-0f766e?style=flat-square" alt="Author" /></a>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Module-04-334155?style=flat-square" alt="Module 04" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Stack-Go-1e3a5f?style=flat-square" alt="Stack" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Domain-Detect-111827?style=flat-square" alt="Domain" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Aug-Sep_2025-0f172a?style=flat-square" alt="Period" />
+</p>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/WinstonMascarenhas1006/cybersecurity-projects/main/assets/module-ethics.png" alt="Authorized labs only" width="100%" />
+</div>
+
+<br/>
+
+<p align="center">
+  <a href="../README.md"><code>← laboratory corpus</code></a>
+</p>
+
+---
+
 # Canary Token Generator
 
 **Author:** [Winston Mascarenhas](https://github.com/WinstonMascarenhas1006)  
@@ -155,6 +188,23 @@ just ports             # re-randomize dev port assignments
 - [02 - Architecture](learn/02-ARCHITECTURE.md) — system design, request lifecycle, schema, dedup gate, notification pipeline
 - [03 - Implementation](learn/03-IMPLEMENTATION.md) — code walkthrough: generators, trigger handler, event service, MySQL protocol
 - [04 - Challenges](learn/04-CHALLENGES.md) — extension ideas: new token types, alert channels, evasion resistance
+
+---
+
+### Legal & ethics
+
+These tools are for **education and authorized security testing only**.  
+Do **not** run offensive capabilities against systems you do not own or lack **explicit written permission** to test.
+
+---
+
+<div align="center">
+
+**Module in the lab corpus** — [cybersecurity-projects](https://github.com/WinstonMascarenhas1006/cybersecurity-projects)  
+[Author](https://github.com/WinstonMascarenhas1006) · [Portfolio](https://portfolio-winston-mascarenhas.vercel.app) · [Profile](https://github.com/WinstonMascarenhas1006/WinstonMascarenhas1006)
+
+</div>
+
 
 ## License
 
