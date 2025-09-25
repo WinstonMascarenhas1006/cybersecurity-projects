@@ -1,0 +1,11 @@
+// ===================
+// Glyph.module.scss
+// ===================
+
+@use '../../styles/tokens' as *;
+
+.glyph {
+  display: block;
+  color: $ink;
+  flex-shrink: 0;
+}
