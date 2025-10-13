@@ -1,0 +1,25 @@
+# .gitignore
+
+# Build
+bin/
+*.o
+*.so
+*.out
+*.tmp.c
+
+# V internals
+.cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Development reference (local only)
+vlang-reference/
