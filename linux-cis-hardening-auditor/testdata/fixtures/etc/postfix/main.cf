@@ -1,0 +1,2 @@
+# main.cf
+inet_interfaces = loopback-only
