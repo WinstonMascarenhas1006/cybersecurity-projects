@@ -37,12 +37,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout main
-          mkdir -p docs/review-seeds
           i=1
           while [ "$i" -le "$COUNT" ]; do
             branch="${PREFIX}-${i}-$(date +%s)"
             file="docs/review-seeds/${PREFIX}-${i}.md"
             git checkout -B "$branch" main
+            mkdir -p docs/review-seeds
             printf '%s\n' "# Review seed ${PREFIX}-${i}" "" "Bot-authored docs update for code-review seeding. Please review and approve." > "$file"
             git add "$file"
             git commit -m "docs: review seed ${PREFIX}-${i}"
