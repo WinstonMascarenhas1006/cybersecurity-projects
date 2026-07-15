@@ -1,0 +1,54 @@
+name: Seed review PRs
+
+# Opens PRs authored by github-actions[bot] so the repo owner can
+# submit real code reviews (self-reviews do not count on the graph).
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: Number of bot PRs to open
+        required: true
+        default: "50"
+      prefix:
+        description: Branch/PR title prefix
+        required: true
+        default: "review-seed"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  open-prs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create bot PRs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COUNT: ${{ github.event.inputs.count }}
+          PREFIX: ${{ github.event.inputs.prefix }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout main
+          mkdir -p docs/review-seeds
+          i=1
+          while [ "$i" -le "$COUNT" ]; do
+            branch="${PREFIX}-${i}-$(date +%s)"
+            file="docs/review-seeds/${PREFIX}-${i}.md"
+            git checkout -B "$branch" main
+            printf '%s\n' "# Review seed ${PREFIX}-${i}" "" "Bot-authored docs update for code-review seeding. Please review and approve." > "$file"
+            git add "$file"
+            git commit -m "docs: review seed ${PREFIX}-${i}"
+            git push -u origin "$branch" --force
+            gh pr create --base main --head "$branch" --title "docs: review seed ${PREFIX} #${i}" --body "Bot-authored docs update for review practice. Please approve after review." || true
+            git checkout main
+            i=$((i + 1))
+            sleep 2
+          done
