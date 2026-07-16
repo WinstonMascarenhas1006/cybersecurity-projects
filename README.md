@@ -1,12 +1,42 @@
-# Cybersecurity Beginner Projects
+<!--
+  cybersecurity-projects — creative lab corpus README
+  Matches profile aesthetic: ink / teal / academic field notes
+-->
 
-Personal portfolio of 15 beginner-level security tools built between **April 2025 and June 2026**, one project per month (longer multi-stack builds took two months).
+<div align="center">
+  <img src="https://raw.githubusercontent.com/WinstonMascarenhas1006/cybersecurity-projects/main/assets/repo-banner.png" alt="cybersecurity-projects laboratory corpus" width="100%" />
+</div>
 
-**Author:** [Winston Mascarenhas](https://github.com/WinstonMascarenhas1006)  
-**GitHub:** [github.com/WinstonMascarenhas1006](https://github.com/WinstonMascarenhas1006)  
-**Portfolio:** [portfolio-winston-mascarenhas.vercel.app](https://portfolio-winston-mascarenhas.vercel.app)
+<p align="center">
+  <a href="https://github.com/WinstonMascarenhas1006"><img src="https://img.shields.io/badge/Author-Winston_Mascarenhas-0f766e?style=flat-square" alt="Author" /></a>
+  &nbsp;
+  <a href="https://portfolio-winston-mascarenhas.vercel.app"><img src="https://img.shields.io/badge/Portfolio-Live-1e3a5f?style=flat-square" alt="Portfolio" /></a>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Tools-15-334155?style=flat-square" alt="15 tools" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Timeline-Apr_2025→Jun_2026-111827?style=flat-square" alt="Timeline" />
+</p>
 
-## Development timeline
+<div align="center">
+  <img src="https://raw.githubusercontent.com/WinstonMascarenhas1006/cybersecurity-projects/main/assets/repo-ethics.png" alt="Authorized labs only" width="100%" />
+</div>
+
+<br/>
+
+### What this is
+
+A **hands-on cybersecurity laboratory corpus** — fifteen tools spanning reconnaissance, detection, hardening, and analysis.  
+Each folder is a self-contained learning artifact: source, docs, and a path to run (or build) it.
+
+This is not a random dump of scripts. It is a structured practice ground for **lab-grounded security engineering**.
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/WinstonMascarenhas1006/cybersecurity-projects/main/assets/repo-domains.png" alt="Domains: Recon, Detect, Harden, Analyze" width="100%" />
+</div>
+
+<br/>
+
+### Development timeline
 
 | # | Folder | Period | Duration |
 |---|--------|--------|----------|
@@ -26,29 +56,29 @@ Personal portfolio of 15 beginner-level security tools built between **April 202
 | 14 | [simple-vulnerability-scanner](./simple-vulnerability-scanner/) | June 2026 | 1 month |
 | 15 | [systemd-persistence-scanner](./systemd-persistence-scanner/) | June 2026 | 1 month |
 
-## All projects
+### Laboratory inventory
 
-| # | Folder | Language | What it is |
-|---|--------|----------|------------|
-| 1 | [base64-tool](./base64-tool/) | Python | Multi-format encode/decode CLI with layer detection |
-| 2 | [c2-beacon](./c2-beacon/) | Python | Educational C2 beacon simulation for defensive learning |
-| 3 | [caesar-cipher](./caesar-cipher/) | Python | Caesar cipher encrypt, decrypt, and frequency-analysis cracking |
-| 4 | [canary-token-generator](./canary-token-generator/) | Go | Honeytoken and canary file generator for intrusion detection |
-| 5 | [dns-lookup](./dns-lookup/) | Python | DNS resolution with WHOIS and structured output |
-| 6 | [firewall-rule-engine](./firewall-rule-engine/) | V | Rule-based firewall engine for allow/deny decisions |
-| 7 | [hash-cracker](./hash-cracker/) | C++ | Dictionary and brute-force hash cracking |
-| 8 | [keylogger](./keylogger/) | Python | Educational keystroke logger (authorized use only) |
-| 9 | [linux-cis-hardening-auditor](./linux-cis-hardening-auditor/) | Shell/Python | CIS benchmark compliance checks for Linux |
-| 10 | [linux-ebpf-security-tracer](./linux-ebpf-security-tracer/) | Python/C | eBPF syscall tracer for Linux security monitoring |
-| 11 | [metadata-scrubber-tool](./metadata-scrubber-tool/) | Python | Strip EXIF and metadata from images and documents |
-| 12 | [network-traffic-analyzer](./network-traffic-analyzer/) | Python | PCAP analysis and live traffic capture |
-| 13 | [simple-port-scanner](./simple-port-scanner/) | C++ | Async TCP port scanner with Boost.Asio |
-| 14 | [simple-vulnerability-scanner](./simple-vulnerability-scanner/) | Go | Python dependency CVE scanner and updater (angela) |
-| 15 | [systemd-persistence-scanner](./systemd-persistence-scanner/) | Go | Linux persistence mechanism scanner (sentinel) |
+| # | Project | Stack | Role in the corpus |
+|---|--------|-------|--------------------|
+| 1 | [base64-tool](./base64-tool/) | Python | Multi-format encode/decode with layer detection |
+| 2 | [c2-beacon](./c2-beacon/) | Python | Educational C2 beacon for *defensive* learning |
+| 3 | [caesar-cipher](./caesar-cipher/) | Python | Classical cipher + frequency-analysis cracker |
+| 4 | [canary-token-generator](./canary-token-generator/) | Go | Honeytoken / canary artifacts for intrusion cues |
+| 5 | [dns-lookup](./dns-lookup/) | Python | DNS resolution, WHOIS, structured export |
+| 6 | [firewall-rule-engine](./firewall-rule-engine/) | V | Allow/deny decision engine over rule sets |
+| 7 | [hash-cracker](./hash-cracker/) | C++ | Dictionary / brute-force hash cracking (lab use) |
+| 8 | [keylogger](./keylogger/) | Python | Educational keystroke logger — **authorized use only** |
+| 9 | [linux-cis-hardening-auditor](./linux-cis-hardening-auditor/) | Shell/Python | CIS-style compliance checks for Linux |
+| 10 | [linux-ebpf-security-tracer](./linux-ebpf-security-tracer/) | Python/C | eBPF syscall tracing for security monitoring |
+| 11 | [metadata-scrubber-tool](./metadata-scrubber-tool/) | Python | Strip EXIF / metadata from images & documents |
+| 12 | [network-traffic-analyzer](./network-traffic-analyzer/) | Python | PCAP analysis and live capture |
+| 13 | [simple-port-scanner](./simple-port-scanner/) | C++ | Async TCP port scanner (Boost.Asio) |
+| 14 | [simple-vulnerability-scanner](./simple-vulnerability-scanner/) | Go | Python dependency CVE scan & update helper |
+| 15 | [systemd-persistence-scanner](./systemd-persistence-scanner/) | Go | Linux persistence mechanism scanner |
 
-## Setup
+---
 
-The fastest way to get everything installed is the root setup script. It walks through all 15 projects in order, creates a separate `.venv` for each Python project (to avoid package name clashes), and reports what succeeded or needs extra tooling.
+### Quick start
 
 From the repo root in PowerShell:
 
@@ -56,13 +86,13 @@ From the repo root in PowerShell:
 powershell -ExecutionPolicy Bypass -File setup.ps1
 ```
 
-What the script does per project type:
+What `setup.ps1` does:
 
-- **Python projects** — creates `.venv`, runs `pip install -e .`, and smoke-tests the CLI
-- **Go projects** — runs `go build` and prints `--help` output
-- **C++ / V / Linux-only projects** — attempts build where possible; skips with a message when Windows lacks dependencies
+- **Python** — creates `.venv`, `pip install -e .`, smoke-tests the CLI  
+- **Go** — `go build` + prints `--help`  
+- **C++ / V / Linux-only** — builds where possible; skips with a clear message on Windows  
 
-After setup, activate a Python project's venv before running commands:
+Then:
 
 ```powershell
 cd base64-tool
@@ -70,33 +100,30 @@ cd base64-tool
 b64tool encode "Hello World"
 ```
 
-## Status on Windows
+### Status on Windows
 
-This table matches what `setup.ps1` expects on a typical Windows machine. Items marked "needs extra setup" still have source code you can read; some require Linux, WSL, Docker, or additional compilers.
-
-| # | Project | Status | How to run after setup |
-|---|---------|--------|--------------------------|
+| # | Project | Status | After setup |
+|---|---------|--------|-------------|
 | 1 | base64-tool | Ready | `b64tool encode "Hello World"` |
-| 2 | c2-beacon | Deps ready | `docker compose -f dev.compose.yml up -d` (needs Docker) |
+| 2 | c2-beacon | Deps ready | `docker compose -f dev.compose.yml up -d` |
 | 3 | caesar-cipher | Ready | `caesar-cipher encrypt "HELLO" --key 3` |
-| 4 | canary-token-generator | Backend built | `just init && just dev-up` (needs Docker) |
+| 4 | canary-token-generator | Backend built | `just init && just dev-up` (Docker) |
 | 5 | dns-lookup | Ready | `dnslookup query google.com --type A --json` |
-| 6 | firewall-rule-engine | Needs V compiler | `./install.sh` on Linux or macOS |
+| 6 | firewall-rule-engine | Needs V | `./install.sh` on Linux/macOS |
 | 7 | hash-cracker | Needs Boost/OpenSSL | `./install.sh` on Linux |
 | 8 | keylogger | Ready | `python keylogger.py --help` |
-| 9 | linux-cis-hardening-auditor | Linux only | `./install.sh && cisaudit --test` in WSL |
+| 9 | linux-cis-hardening-auditor | Linux only | WSL: `./install.sh && cisaudit --test` |
 | 10 | linux-ebpf-security-tracer | CLI ready | `ebpf-tracer --help` (eBPF needs Linux + bcc) |
 | 11 | metadata-scrubber-tool | Ready | `metadata-scrubber --help` |
-| 12 | network-traffic-analyzer | Ready | `netanal --help` (live capture needs [Npcap](https://npcap.com)) |
-| 13 | simple-port-scanner | Needs Boost | `./install.sh` on Linux or WSL |
+| 12 | network-traffic-analyzer | Ready | `netanal --help` (Npcap for live capture) |
+| 13 | simple-port-scanner | Needs Boost | Linux/WSL `./install.sh` |
 | 14 | simple-vulnerability-scanner | Ready | `.\svscan.exe --help` |
-| 15 | systemd-persistence-scanner | Ready | `.\sentinel.exe --help` (scanning needs Linux) |
+| 15 | systemd-persistence-scanner | Ready | `.\sentinel.exe --help` |
 
-## Manual setup by stack
+### Manual setup by stack
 
-### Python projects
-
-Most Python folders use a standard editable install inside a local venv:
+<details>
+<summary><b>Python</b></summary>
 
 ```powershell
 cd <project-folder>
@@ -105,39 +132,57 @@ python -m venv .venv
 pip install -e .
 ```
 
-Projects: base64-tool, caesar-cipher, dns-lookup, keylogger, linux-ebpf-security-tracer, metadata-scrubber-tool, network-traffic-analyzer (under `python/`), c2-beacon (under `backend/`).
+Projects: `base64-tool`, `caesar-cipher`, `dns-lookup`, `keylogger`, `linux-ebpf-security-tracer`, `metadata-scrubber-tool`, `network-traffic-analyzer` (`python/`), `c2-beacon` (`backend/`).
 
-### Go projects
+</details>
+
+<details>
+<summary><b>Go</b></summary>
 
 ```powershell
 cd <project-folder>
 go build -o tool.exe ./cmd/<name>
 ```
 
-- simple-vulnerability-scanner → `go build -o svscan.exe ./cmd/angela`
-- systemd-persistence-scanner → `go build -o sentinel.exe ./cmd/sentinel`
-- canary-token-generator → `go build -o canary.exe ./cmd/canary`
+- simple-vulnerability-scanner → `go build -o svscan.exe ./cmd/angela`  
+- systemd-persistence-scanner → `go build -o sentinel.exe ./cmd/sentinel`  
+- canary-token-generator → `go build -o canary.exe ./cmd/canary`  
 
-### C++ projects
+</details>
+
+<details>
+<summary><b>C++ / Linux-only</b></summary>
 
 ```bash
 cd <project-folder>
 mkdir build && cd build
-cmake ..
-cmake --build .
+cmake .. && cmake --build .
 ```
 
-Projects: hash-cracker, simple-port-scanner. Both need Boost and a recent C++ toolchain.
+- **hash-cracker**, **simple-port-scanner** — Boost + modern C++  
+- **linux-cis-hardening-auditor**, **linux-ebpf-security-tracer**, **systemd-persistence-scanner** — prefer Linux/WSL  
+- **firewall-rule-engine** — [V compiler](https://vlang.io)  
+- **c2-beacon**, **canary-token-generator** — Docker Compose for full stacks  
 
-### Linux-only or special cases
+</details>
 
-- **linux-cis-hardening-auditor** — run on Linux or WSL
-- **linux-ebpf-security-tracer** — CLI installs on Windows; kernel tracing needs Linux with bcc
-- **systemd-persistence-scanner** — builds on Windows; point `--root` at a Linux filesystem to scan
-- **simple-port-scanner** — build on Linux/WSL where Boost is available
-- **firewall-rule-engine** — needs the [V compiler](https://vlang.io)
-- **c2-beacon** and **canary-token-generator** — full stacks use Docker Compose
+---
 
-## Legal notice
+### Legal & ethics
 
-These tools are for educational use and authorized security testing only. Do not run offensive tools (keylogger, C2 beacon, port scanners, hash crackers, etc.) against systems you do not own or lack explicit written permission to test.
+These tools are for **education and authorized security testing only**.  
+Do **not** run offensive capabilities (keylogger, C2 beacon, scanners, crackers, etc.) against systems you do not own or lack **explicit written permission** to test.
+
+---
+
+<div align="center">
+
+**Part of a broader cybersecurity practice** — studied seriously, practiced carefully, built in public.
+
+[Author](https://github.com/WinstonMascarenhas1006)
+·
+[Portfolio](https://portfolio-winston-mascarenhas.vercel.app)
+·
+[Profile notes](https://github.com/WinstonMascarenhas1006/WinstonMascarenhas1006)
+
+</div>
